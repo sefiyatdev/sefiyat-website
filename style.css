@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body{
+    background: #f5f7fa;
+}
+.navbar{
+    background: #ffffff;
+    width: 100%;
+}
+
+/* THIS creates the space you see in the design */
+.nav-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a73e8;
+}
+
+.navbar nav a{
+    margin: o 12px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.nav-links a{
+    margin: 0 14px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.nav-actions{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-outline{
+    border: 1px solid #1a73e8;
+    background: none;
+    padding: 8px 16px;
+    color: #1a73e8;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    background: linear-gradient(135deg, #2f80ed, #56ccf2);
+    color: #fff;
+}
+
+.hero-text{
+    max-width: 500px;
+}
+
+.hero-text h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.btn-primary{
+    background: #ffffff;
+    color: #2f80ed;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-image img{
+    max-width: 420px;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer{
+    background: #0f172a;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-card{
+    background: #ffffff;
+    display: inline-block;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.footer-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.footer-card h3{
+    margin-bottom: 10px;
+    color: #1a73e8;
+}
+
+.footer-card p{
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media(max-width: 900px) {
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-image{
+        margin-top: 40px;
+    }
+}
